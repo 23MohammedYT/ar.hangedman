@@ -5,8 +5,8 @@ let words = []; // لتخزين الكلمات التي سيتم اللعب به
 
 // بدء اللعبة عند النقر على زر "ابدأ اللعب"
 const startButton = document.getElementById("startGame");; // زر "ابدأ اللعب"
-const mainMenu = document.getElementById("menu-container"); // القائمة الرئيسية
-const gameMenu = document.getElementById("container"); // قائمة اللعبة
+const mainMenu = document.querySelector(".menu-container"); // القائمة الرئيسية
+const gameMenu = document.querySelector(".container"); // قائمة اللعبة
 
 // عناصر القائمة
 const categories = document.querySelectorAll(".category");
