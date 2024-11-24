@@ -1,0 +1,207 @@
+* {
+	font-family: "Cairo", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+	"slnt" 0;
+}	
+/* إعدادات أساسية */
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* الحاوية */
+.container {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* القسم الأيسر */
+.left {
+    flex: 1;
+    text-align: center;
+}
+
+/* القسم الأيمن */
+.right {
+    flex: 1;
+    text-align: center;
+}
+
+/* العناوين */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: -25px;
+    color: #f1c40f;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* الكلمة */
+.word-container {
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* لوحة المفاتيح */
+.keyboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.key {
+    background-color: #16a085;
+    color: white;
+	width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.key:hover {
+    background-color: #1abc9c;
+    transform: translateY(-3px);
+}
+
+.key.disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    color: #2c3e50;
+}
+
+/* الرسالة */
+.message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #e74c3c;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* زر إعادة اللعب */
+.restart {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.restart:hover {
+    background-color: #2ecc71;
+    transform: translateY(-3px);
+}
+
+/* الحبل واللعبة */
+canvas {
+    background-color: #dfe6e9;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* حاوية القائمة */
+.menu-container {
+	display: block;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* العناوين */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* الفئات */
+.categories, .difficulty {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* أزرار الفئات والمستوى */
+button {
+    background-color: #16a085;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #1abc9c;
+    transform: translateY(-3px);
+}
+
+button.selected {
+    background-color: #f1c40f;
+    color: #2c3e50;
+}
+
+/* زر بدء اللعب */
+.start-btn {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.start-btn:hover {
+    background-color: #2ecc71;
+    transform: translateY(-3px);
+}

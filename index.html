@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="لعبة الرجل المشنوق: لعبة ترفيهية تعليمية ممتعة تهدف إلى تحسين مهاراتك في اللغة العربية ومعرفة الكلمات.">
+		<meta name="keywords" content="لعبة الرجل المشنوق, ألعاب تعليمية, ألعاب عربية, تحسين اللغة العربية, تخمين الكلمات, ألعاب الكلمات, 23MohammedYT">
+		<meta name="author" content="23MohammedYT">
+		<title>لعبة الرجل المشنوق</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="menu-container">
+			<h1 class="title">لعبة الرجل المشنوق</h1>
+			<p class="subtitle">اختر الفئة والمستوى لتبدأ اللعب</p>
+			<div class="categories">
+				<h2>الفئات</h2>
+				<button class="category" data-category="فواكه">فواكه</button>
+				<button class="category" data-category="بلدان">بلدان</button>
+				<button class="category" data-category="حيوانات">حيوانات</button>
+				<button class="category" data-category="أشياء">أشياء</button>
+			</div>
+			<div class="difficulty">
+				<h2>المستوى</h2>
+				<button class="difficulty-btn" data-difficulty="easy">سهل</button>
+				<button class="difficulty-btn" data-difficulty="medium">متوسط</button>
+				<button class="difficulty-btn" data-difficulty="hard">صعب</button>
+			</div>
+			<button id="startGame" class="start-btn">ابدأ اللعب</button>
+		</div>
+		<div class="container">
+			<div class="left">
+				<canvas id="hangmanCanvas" width="200" height="300"></canvas>
+				<div id="word" class="word-container"></div>
+				<div id="message" class="message"></div>
+			</div>
+			<div class="right">
+				<h1 class="title">لعبة الرجل المشنوق</h1>
+				<p class="subtitle">حاول تخمين الكلمة قبل انتهاء المحاولات!</p>
+				<div id="keyboard" class="keyboard-container"></div>
+				<button id="restart" class="restart hidden">إعادة اللعب</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
